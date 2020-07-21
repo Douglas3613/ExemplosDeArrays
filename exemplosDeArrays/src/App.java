@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class App {
     public static void main(String[] args) throws Exception {
 
@@ -26,5 +28,24 @@ public class App {
 
 
         }
+        System.out.println("###########################");
+        //exemplo2
+        int arr[] = {15,9,0,21,13,17,5};
+
+        for (int i : arr){
+        //System.out.println(i + " ");
+
+        int busca = 17;
+        Arrays.sort(arr); // para ordenar os objetos dentro da arry
+        System.out.println("Search -> " + Arrays.binarySearch(arr, busca)); // para achar o binario
+        System.out.println();
+        System.out.println("valor " + i);
+        } 
+       /* int busca = 21;
+        for (int i : arr){
+            System.out.println("Search -> " + Arrays.binarySearch(arr, busca));
+
+        
+       }*/
     }
 }
